@@ -2,6 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Application link: https://Inna38.github.io/medicine_delivery/
+
+Technology stack:
+1. react
+2. react-dom
+3. react-router-dom
+4. css
+5. axios
+6. nanoid
+7. react-toastify
+
 ## Available Scripts
 
 In the project directory, you can run:
