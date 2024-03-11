@@ -1,0 +1,39 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.item {
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid rgb(78, 78, 77);
+  box-shadow: 3px 3px 3px rgb(102, 102, 101);
+  border-radius: 10px;
+  padding: 25px;
+  width: 255px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: end;
+}
+
+.btn_cart {
+  padding: 25px;
+  color: #5a0de3;
+}
+
+.btn {
+  width: 205px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #3666e0;
+  color: #f2edc8;
+  margin-bottom: 45px;
+}

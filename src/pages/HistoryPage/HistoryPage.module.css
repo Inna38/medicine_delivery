@@ -1,0 +1,27 @@
+.inputHistory {
+  text-align: justify;
+  width: 50%;
+}
+
+.item {
+  border: 1px solid rgb(25 81 108);
+  box-shadow: 1px 1px #285171, 0em -1px 0.4em #285171;
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 24px;
+  width: 450px;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.btn {
+  width: 205px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #3666e0;
+  color: #f2edc8;
+  margin-bottom: 45px;
+}

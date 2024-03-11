@@ -1,0 +1,1 @@
+export const BASE_URL = "https://medicine-delivery-backend-8m18.onrender.com"
