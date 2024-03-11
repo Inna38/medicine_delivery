@@ -55,6 +55,7 @@ button {
   min-width: 95px;
   min-height: 35px;
   margin-top: 15px;
+  padding: 15px;
   cursor: pointer;
 }
 

@@ -3,6 +3,7 @@ import css from "./ShoppingCartPage.module.css";
 import { postOrder } from "../../services/http/http";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Modal } from "../../components/Modal/Modal";
 
 const ShoppingCartPage = () => {
   const [cart, setCart] = useState(() => {
@@ -16,8 +17,15 @@ const ShoppingCartPage = () => {
     address: "",
     order: cart,
   });
+
+  const [isModal, setIsModal] = useState(false);
+
   const notify = (message) => toast(message);
- 
+
+  const handleToggleModal = () => {
+    setIsModal((prev) => !prev);
+  };
+
   const handleMedicinesDelete = (idDelete) => {
     setCart(cart.filter(({ id }) => id !== idDelete));
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -99,6 +107,7 @@ const ShoppingCartPage = () => {
   return (
     <div>
       {localStorage.setItem("cart", JSON.stringify(cart))}
+      {isModal && <Modal handleToggleModal={handleToggleModal} />}
       <ToastContainer />
       <form onSubmit={handleOrderSubmit} className={css.form_container}>
         <div className={css.left_container}>
@@ -145,6 +154,10 @@ const ShoppingCartPage = () => {
               className={css.input_change}
             />
           </label>
+
+          <button type="button" onClick={handleToggleModal}>
+            on Google map
+          </button>
         </div>
 
         <div className={css.right_container}>
